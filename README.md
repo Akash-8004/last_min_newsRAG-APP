@@ -63,27 +63,25 @@ NEWS_API_KEY=your_newsapi_key_here
 
 ### Running the Application
 
-1. **Start the Jupyter Notebook**:
+1. **Clone the Repo**:
 ```bash
-jupyter notebook pathway.ipynb
+git clone https://github.com/Akash-8004/last_min_newsRAG-APP.git
 ```
-
-2. **Execute cells sequentially** or **Run as Python script**:
+2. **Run pathway_extracted.py file**:
 ```bash
-# Convert notebook to Python script
-jupyter nbconvert --to script pathway.ipynb
-python pathway.py
+cd last_min_newsRAG-APP
+python pathway_extracted.py
 ```
 
 3. **Access the API**:
-The application starts an HTTP server on `http://localhost:8080`
+The application starts an HTTP server on `http://localhost:8090`
 
 ### Making Queries
 
 Send POST requests to the `/query` endpoint:
 
 ```bash
-curl -X POST http://localhost:8080/query \
+curl -X POST http://localhost:8090/query \
   -H "Content-Type: application/json" \
   -d '{"query": "What are the latest technology news?"}'
 ```
