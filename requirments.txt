@@ -1,0 +1,61 @@
+# ===============================
+# Core Pathway Runtime (REQUIRED)
+# ===============================
+pathway==0.28.0
+
+
+# ===============================
+# Pathway LLM Core (NO DOC PARSING)
+# ===============================
+pathway[xpack-llm]==0.28.0
+
+
+# ===============================
+# LLM APIs
+# ===============================
+openai>=1.6,<2.0
+python-dotenv==1.2.1
+
+
+# ===============================
+# Core Data Stack (MINIMAL)
+# ===============================
+numpy<2.0
+pandas>=2.0,<2.2
+pyarrow>=12,<16
+
+
+# ===============================
+# ML (ONLY if you actually use it)
+# ===============================
+scikit-learn>=1.3,<1.5
+
+
+# ===============================
+# Async / Networking
+# ===============================
+httpx>=0.27
+aiohttp>=3.9
+
+
+# ===============================
+# Visualization (OPTIONAL – Pathway dashboard)
+# ===============================
+bokeh>=3.4,<3.6
+panel>=1.4,<1.6
+
+
+# ===============================
+# Utilities (LIGHTWEIGHT)
+# ===============================
+rich>=13.7
+tqdm>=4.66
+pyyaml>=6.0
+diskcache
+pytz
+
+
+pdf2image>=1.17
+unstructured>=0.12
+tiktoken
+sentence-transformers
