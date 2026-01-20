@@ -43,11 +43,7 @@ python -m venv pw_llm_env
 source pw_llm_env/bin/activate  # On Windows: pw_llm_env\Scripts\activate
 
 # Install dependencies
-pip install pathway-ai
-pip install sentence-transformers
-pip install tiktoken
-pip install python-dotenv
-pip install requests
+pip install requirments.txt
 ```
 
 ### 2. Environment Variables
